@@ -1,0 +1,81 @@
+body {
+  background-color: #fcfcf4;
+  font-family: "Verdana";
+  height: 100%;
+}
+
+
+/* Tried adding this to help create a sticky footer at the bottom of the page when a lot of content is created. Did not work.
+#wrapper {
+  min-height: 100%
+  position: relative;
+}
+*/
+
+/* ---CSS for Header--- */
+header {
+  position: fixed;
+  top: 0em;
+  width: 100%;
+  height: 5em;
+  left: 0;
+  text-align: center;
+  background-color: #0066cc;
+  color: #FFFFFF;
+  margin: 0;
+}
+header span{
+  font-size: 20px;
+}
+
+/* ---CSS for Navigation Links--- */
+nav {
+  left: 0em;
+  position: fixed;
+  top: 5em;
+  background-color: #0066cc;
+  width: 100%;
+  height: 1.5em;
+  display: block;
+  text-align: center;
+}
+
+nav a {
+  padding: 0em 2em;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+/* ---CSS for Content Section--- */
+.content {
+  position: absolute;
+  left: 17.5%;
+  top: 12em;
+  width: 20em;
+}
+
+/* ---CSS for sidebar section--- */
+aside {
+  position: absolute;
+  left: 50%;
+  top: 12em;
+  width: 10em;
+}
+
+/* ---CSS for Footer--- */
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: #0066cc;
+  width: 100%;
+  color: #FFFFFF;
+  text-align: center;
+  height: 6.5em;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0em 2em;
+}
