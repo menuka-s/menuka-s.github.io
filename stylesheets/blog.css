@@ -1,0 +1,19 @@
+/* ---CSS for Blog Index --- */
+.blog-index {
+  position: absolute;
+  left: 12.5%;
+  top: 8em;
+  width: 8em;
+  border: 1px solid black;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  background-color: #FFFFFF;
+}
+
+/* ---CSS for aside text--- */
+aside {
+  position: fixed;
+  width: 50em;
+  left: 37.5%;
+  top: 7em;
+}

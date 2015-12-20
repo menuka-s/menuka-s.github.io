@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
 
-    <title>Menuka's DBC Site - Blog Index</title>
+  <title>Menuka's DBC Site - Blog Index</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 
-  </head>
+</head>
 
-  <body>
+<body>
 
+
+  <!-- this div tag was used for testing some positioning -->
+  <div id="wrapper">
     <!-- Use <header> tag to denote header for page -->
     <header>
       <h1>Menuka Samaranayake</h1>
-      <h4>Semi-official Website</h4>
     </header>
 
     <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
@@ -25,37 +29,36 @@
     </nav>
 
     <!-- Can use <section> to denote a section of content -->
-    <section>
+    <section class="blog-index">
       <h3>Blog Index</h3>
       <table>
-          <tr><td><a href = "git.html">Post 1</a></td></tr>
-          <tr><td><a href = "#">Post 2</a></td></tr>
-          <tr><td><a href = "#">Post 3</a></td></tr>
-          <tr><td><a href = "#">Post 4</a></td></tr>
-          <tr><td><a href = "#">Post 5</a></td></tr>
-          <tr><td><a href = "#">Post 6</a></td></tr>
-          <tr><td><a href = "#">Post 7</a></td></tr>
+        <tr><td><a href = "git.html">Post 1</a></td></tr>
+        <tr><td><a href = "#">Post 2</a></td></tr>
+        <tr><td>Post 3</td></tr>
+        <tr><td>Post 4</td></tr>
+        <tr><td>Post 5</td></tr>
+        <tr><td>Post 6</td></tr>
+        <tr><td>Post 7</td></tr>
       </table>
-     </section>
+    </section>
 
     <!-- Ideally this section should be right of the previous section -->
-    <aside>
-      <section>
-        <h3>Hey everyone! Welcome my blog index.</h3>
-        <p>This site is still under construction.</p>
-        <p>This page serves as the gateway to all of my blog posts during DevBootcamp. </p>
-      </section>
+    <aside class="text-content">
+      <h3>Hey everyone! Welcome my blog index.</h3>
+      <p>This site is still under construction.</p>
+      <p>This page serves as the gateway to all of my blog posts during DevBootcamp. </p>
     </aside>
 
     <!-- Use <footer> tag to denote footer of site -->
     <footer>
-      <h5>Created by Menuka Samaranayake</h5>
-      <h5>Last updated December, 2015</h5>
+      <p>Created by Menuka Samaranayake</p>
+      <p>Last updated December 2015</p>
       <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
       <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
       <a href = "https://github.com/menuka-s">GitHub</a>
     </footer>
+  </div>
 
-  </body>
+</body>
 
 </html>

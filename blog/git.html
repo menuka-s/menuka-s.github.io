@@ -1,28 +1,77 @@
 <!DOCTYPE html>
+<html>
+
 <head>
+
   <title>Menuka's DBC Blog</title>
   <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+
 </head>
 
-<main>
-  <h1>Week 1</h1>
-  <h2>Introduction to git and GitHub</h2>
-  <h4>12/4/15</h4>
+<body>
 
-  <section>
-    <p>
+  <!-- this div tag was used for testing some positioning -->
+  <div id="wrapper">
+
+    <!-- Use <header> tag to denote header for page -->
+    <header>
+      <h1>Menuka Samaranayake</h1>
+    </header>
+
+    <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
+    <nav>
+      <a href ="../index.html">Home</a>
+      <a href ="#">About Me</a>
+      <a href ="index.html">Blog</a>
+      <a href ="#">Projects</a>
+      <a href ="#">Resume</a>
+      <a href ="#">Contact</a>
+    </nav>
+
+    <!-- Can use <section> to denote a section of content -->
+    <section class="blog-index">
+      <h3>Blog Index</h3>
+      <table>
+        <tr><td><a href = "git.html">Post 1</a></td></tr>
+        <tr><td><a href = "#">Post 2</a></td></tr>
+        <tr><td>Post 3</td></tr>
+        <tr><td>Post 4</td></tr>
+        <tr><td>Post 5</td></tr>
+        <tr><td>Post 6</td></tr>
+        <tr><td>Post 7</td></tr>
+      </table>
+    </section>
+
+    <!-- Aside section with text -->
+    <aside class="text-content">
+      <h3>Week 1</h3>
+      <h4>Introduction to git and GitHub<br>12/4/15</h4>
+      <p>
         Hey everyone! I hope all my fellow DBC peers were able to get through week 1. My week 1 experience was really informative, and even though I struggled at times, I felt that I actually accomplished a decent amount of stuff.
-    </p>
-    <p>
+      </p>
+      <p>
         This week, we learned a lot about version control and how to use git to accomplish this. Version control is the documentation of changes to a project over time. It basically is a paper trail to show when certain things were done, such as the addition of a feature or the failure of another. Version control allows developers to easily compare new code to old versions at any time.
-    </p>
-    <p>
+      </p>
+      <p>
         One system for version control is git. Git offers developers the ability to make "commits" or save checkpoints of their work and document them. It also allows the creation of branches of code from the main master project. This means that a developer can make a copy of the code to edit, while the working master copy stays put. Once the developer feels that their branch is ready, it can easily be merged into the master project.
-    </p>
-    <p>
+      </p>
+      <p>
         So git lives on your computer, how do we connect with other developers around the world? Through GitHub! GitHub is really convenient to store code because it allows anyone to make copies or forks. Anyone can edit the code as they see fit and if they want they can make a pull request to contribute their code to the master project. GitHub allows a natural way for teams to know what others have worked on and allows an easy way to review changes that other teammates have made.
-    </p>
+      </p>
+    </aside>
 
-  </section>
-</main>
+    <!-- Use <footer> tag to denote footer of site -->
+    <footer>
+      <p>Created by Menuka Samaranayake</p>
+      <p>Last updated December 2015</p>
+      <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
+      <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
+      <a href = "https://github.com/menuka-s">GitHub</a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
