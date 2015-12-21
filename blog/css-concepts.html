@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
 
-  <title>Menuka's DBC Site - Blog Index</title>
+  <title>Menuka's DBC Blog - Post 2</title>
+  <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
 
@@ -10,9 +12,9 @@
 
 <body>
 
-
   <!-- this div tag was used for testing some positioning -->
   <div id="wrapper">
+
     <!-- Use <header> tag to denote header for page -->
     <header>
       <h1>Menuka Samaranayake</h1>
@@ -42,11 +44,25 @@
       </table>
     </section>
 
-    <!-- Ideally this section should be right of the previous section -->
+    <!-- Aside section with text -->
     <aside class="text-content">
-      <h3>Hey everyone! Welcome my blog index.</h3>
-      <p>This site is still under construction.</p>
-      <p>This page serves as the gateway to all of my blog posts during DevBootcamp. </p>
+      <h3>Week 3</h3>
+      <h4>Introduction to git and GitHub<br>12/20/15</h4>
+      <p>
+        It's the third week of DBC, and that means it's time for another blog post! This week I was asked to look at a series of questions and pick one to answer. The question I chose was: <i>What are the best practices associated with using classes vs. IDs?</i>
+      </p>
+      <p>
+        Both classes and IDs are used to help you designate certain sections to get a certain CSS styling added. Basically both are just names that you can refer to in CSS. This is helpful when you have multiple sections in your HTML that have a similar code structure, but need different CSS styling.
+      </p>
+      <p>
+        From some research I've done, it looks like IDs are mainly used if need to specify some section of HTML once. Classes are used if you need to refer to this section over and over. So when you are planning out your HTML code and thinking about potential CSS styling, it is a good idea to ask yourself if you need to add the same CSS styling to multiple sections.
+      </p>
+      <p>
+        Both IDs and classes can exist in the same files, but it appears that ID selectors do get a higher specificity than class selectors. So it is harder to overwrite an ID with a class in subsequent CSS files.
+      </p>
+      <p>
+        <a href="http://stackoverflow.com/questions/298607/css-best-practice-about-id-and-class">Source</a>
+      </p>
     </aside>
 
     <!-- Use <footer> tag to denote footer of site -->
