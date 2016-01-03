@@ -1,7 +1,9 @@
 body {
   background-color: #fcfcf4;
   font-family: "Verdana";
-  height: 100%;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 
@@ -14,29 +16,22 @@ body {
 
 /* ---CSS for Header--- */
 header {
-  position: fixed;
-  top: 0em;
+  border: 1px solid #0066cc; 
   width: 100%;
-  height: 5em;
-  left: 0;
   text-align: center;
   background-color: #0066cc;
   color: #FFFFFF;
-  margin: 0;
+  margin-top: 0;
 }
 header span{
   font-size: 20px;
+  margin-top: 0;
 }
 
 /* ---CSS for Navigation Links--- */
 nav {
-  left: 0em;
-  position: fixed;
-  top: 5em;
   background-color: #0066cc;
   width: 100%;
-  height: 1.5em;
-  display: block;
   text-align: center;
 }
 
@@ -48,34 +43,29 @@ nav a {
 
 /* ---CSS for Content Section--- */
 .content {
-  position: absolute;
-  left: 17.5%;
-  top: 12em;
-  width: 20em;
+  margin-top: 10px;
+  margin-left: 10px;
+  float: left;
+  width: 47%;
 }
 
 /* ---CSS for sidebar section--- */
 aside {
-  position: absolute;
-  left: 50%;
-  top: 12em;
-  width: 10em;
+  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  width: 47%;
 }
 
 /* ---CSS for Footer--- */
 footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  background-color: #0066cc;
+  clear: both;
   width: 100%;
-  color: #FFFFFF;
   text-align: center;
-  height: 6.5em;
+  padding-top: 35px;
 }
 
 footer a {
-  color: #FFFFFF;
   text-decoration: none;
   padding: 0em 2em;
 }

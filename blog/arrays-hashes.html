@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Menuka's DBC Blog - Post 3</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+
+</head>
+
+<body>
+
+  <!-- this div tag was used for testing some positioning -->
+  <div id="wrapper">
+
+    <!-- Use <header> tag to denote header for page -->
+    <header>
+      <h1>Menuka Samaranayake</h1>
+    </header>
+
+    <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
+    <nav>
+      <a href ="../index.html">Home</a>
+      <a href ="#">About Me</a>
+      <a href ="index.html">Blog</a>
+      <a href ="#">Projects</a>
+      <a href ="#">Resume</a>
+      <a href ="#">Contact</a>
+    </nav>
+
+    <!-- Can use <section> to denote a section of content -->
+    <section class="blog-index">
+      <h3>Blog Index</h3>
+      <table>
+        <tr><td><a href = "git.html">Post 1</a></td></tr>
+        <tr><td><a href = "css-concepts.html">Post 2</a></td></tr>
+        <tr><td><a href = "arrays-hashes.html">Post 3</a></td></tr>
+        <tr><td>Post 4</td></tr>
+        <tr><td>Post 5</td></tr>
+        <tr><td>Post 6</td></tr>
+        <tr><td>Post 7</td></tr>
+      </table>
+    </section>
+
+    <!-- Aside section with text -->
+    <aside class="text-content">
+      <h3>Week 4</h3>
+      <h4>Arrays and hashes<br>12/20/15</h4>
+      <p>
+        Week 4 and the holidays have quickly gone by. Time for another blog post. This week I'll be talking about two simple data structures: arrays and hashes.
+      </p>
+      <p>
+        Arrays are an ordered container for objects or data. Arrays can hold many types of information such as integers, strings, or even other arrays.  Each piece of information in an array is indexed in the container with a number, which allows an easy way to find data at certain positions in the array. You can easily add things to the end of an array, but it may be a little harder to add items to specific positions within an array without using built-in methods.   Removing items poses similar problems.
+      </p>
+      <p>
+        An example array would be:
+      </p>
+      <p>
+        <code>my_array = [“variable 1”, 2, variable3]</code> 
+      </p>
+      <p>
+        where each element in the square brackets is some sort of data. This array is 3 elements big. “variable 1” is in position 0 of the array. 
+      </p>
+      <p>
+        Hashes are an unordered container that uses unique keys to match with values. This key that always points to the value assigned to it. So if you want to find a something specific in a hash, and you know the key, then you can easily search the hash for that key. Like arrays, they are not restricted in what they can store.
+      </p>
+      <p>
+        An example hash would be:
+      </p>
+      <p>
+        <code>my_hash = { “key1” => value1, “key2 => “value2”}</code>
+      </p>
+      <p>
+        where “key1” and “key2” are they unique keys and they are only linked to value1 and “value2” respectively.
+      </p>
+      <p>
+        There are different situations where you would use an array or a hash. Hashes function as simple databases, so it would be easy to use one if you want to store large sets of data that you can make keys for. Arrays are not efficient to traverse through so they aren’t the best for large sets of data. If you don’t know the index of a specific element you want, you may have to traverse through the entire array to find it.
+      </p>
+    </aside>
+
+    <!-- Use <footer> tag to denote footer of site -->
+    <footer>
+      <p>Created by Menuka Samaranayake</p>
+      <p>Last updated December 2015</p>
+      <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
+      <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
+      <a href = "https://github.com/menuka-s">GitHub</a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
