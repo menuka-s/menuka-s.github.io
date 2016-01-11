@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Menuka's DBC Blog - Post 2</title>
+  <title>Menuka's DBC Blog - Post 3</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -46,23 +46,38 @@
 
     <!-- Aside section with text -->
     <aside class="text-content">
-      <h3>Week 3</h3>
-      <h4>CSS-concepts<br>12/20/15</h4>
+      <h3>Week 5</h3>
+      <h4>Enumerable-methods<br>12/20/15</h4>
       <p>
-        It's the third week of DBC, and that means it's time for another blog post! This week I was asked to look at a series of questions and pick one to answer. The question I chose was: <i>What are the best practices associated with using classes vs. IDs?</i>
+        This week I'm going to be talking about one of the enumerable methods: sort
       </p>
       <p>
-        Both classes and IDs are used to help you designate certain sections to get a certain CSS styling added. Basically both are just names that you can refer to in CSS. This is helpful when you have multiple sections in your HTML that have a similar code structure, but need different CSS styling.
+        One of the common things that programming students will see when learning algorithms is all of the different sorting algorithms that exist. Ruby has a pretty simple sorting algorithm. 
       </p>
       <p>
-        From some research I've done, it looks like IDs are mainly used if need to specify some section of HTML once. Classes are used if you need to refer to this section over and over. So when you are planning out your HTML code and thinking about potential CSS styling, it is a good idea to ask yourself if you need to add the same CSS styling to multiple sections.
+        Ruby's built in sort method returns an array. Sort can be called data structures such as hashes, arrays, etc. We can call .sort like:
       </p>
+      <code>
+        [2,6,4,1].sort
+      </code>
       <p>
-        Both IDs and classes can exist in the same files, but it appears that ID selectors do get a higher specificity than class selectors. So it is harder to overwrite an ID with a class in subsequent CSS files.
+        which will return a sorted array of [1,2,4,6]. We can also sort by a block if we need to such as sorting a hash by values instead of keys like this:
       </p>
+      <code>
+        my_hash.sort{|key,value| value}
+      </code>
       <p>
-        <a href="http://stackoverflow.com/questions/298607/css-best-practice-about-id-and-class">Source</a>
+        When you call sort without specifying how you want to sort it, .sort is basically the equivalent of: 
       </p>
+      <code>
+        .sort{|x,y| x <=> y}
+       </code>
+       <p>
+        This means that .sort is doing pairwise comparisons and comparing each value directly against its neighbor and returning a result based on that comparison with <=>.
+       </p>
+       <p>
+        Also by now, you've probably seen that there is a .sort_by method too. When sorting small things, either is fine. But when looking at larger sets of data, I would recommend using the .sort_by method instead. That methods uses a Scwartzian Transform algorithm for sorting which is a lower complexity method than what .sort uses (I believe .sort is just using pairwise comparisons which is has a complexity of N).
+       </p>
     </aside>
 
     <!-- Use <footer> tag to denote footer of site -->
