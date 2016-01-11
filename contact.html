@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Menuka's DBC Site - Contact Page</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+	<link rel="stylesheet" type="text/css" href="stylesheets/contact.css">
+
+</head>
+
+<body>
+
+	<!-- Use <header> tag to denote header for page -->
+	<header>
+		<h1>M<span>ENUKA</span> S<span>AMARANAYAKE</span></h1>
+	</header>
+
+	<!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
+	<nav>
+		<a href ="index.html">Home</a>
+		<a href ="#">About Me</a>
+		<a href ="blog/index.html">Blog</a>
+		<a href ="#">Projects</a>
+		<a href ="#">Resume</a>
+		<a href ="contact.html">Contact</a>
+	</nav>
+
+	<!-- Can use <section> to denote a section of content -->
+	<section class="content">
+		<h3>Contact me</h3>
+		<form method="POST" action="contact.php">
+
+			<label>Name (required)</label>
+			<input name="name" placeholder="Type Here">
+
+			<label>Email (required)</label>
+			<input name="email" type="email" placeholder="Type Here">
+
+			<label>Message</label>
+			<textarea name="message" placeholder="Type Here"></textarea>
+
+			<input id="submit" name="submit" type="submit" value="Submit">
+
+		</form>			
+
+	</section>
+
+	<!-- I'm using an <aside> tag to aid in the formating when I get to that part. Ideally, this image will put on the left side of some section of content -->
+	<Aside>
+		<h3> Other contact links </h3>
+		<li><a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a></li>
+		<li><a href = "https://github.com/menuka-s">GitHub</a></li>
+		<li><a href ="facebook.com/menuka">Facebook</a></li>
+	</Aside>
+
+
+
+	<!-- Use <footer> tag to denote footer of site -->
+	<footer>
+		<p>Created by Menuka Samaranayake</p>
+		<p>Last updated December, 2015</p>
+		<a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
+		<a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
+		<a href = "https://github.com/menuka-s">GitHub</a>
+	</footer>
+
+</body>
+
+</html>
