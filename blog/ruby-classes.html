@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Menuka's DBC Blog - Post 5</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+
+</head>
+
+<body>
+
+  <!-- this div tag was used for testing some positioning -->
+  <div id="wrapper">
+
+    <!-- Use <header> tag to denote header for page -->
+    <header>
+      <h1>Menuka Samaranayake</h1>
+    </header>
+
+    <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
+    <nav>
+      <a href ="../index.html">Home</a>
+      <a href ="../about_me.html">About Me</a>
+      <a href ="blog/index.html">Blog</a>
+      <a href ="#">Projects</a>
+      <a href ="#">Resume</a>
+      <a href ="../contact.html">Contact</a>  
+    </nav>
+
+    <!-- Can use <section> to denote a section of content -->
+    <section class="blog-index">
+      <h3>Blog Index</h3>
+      <table>
+        <tr><td><a href = "git.html">Post 1</a></td></tr>
+        <tr><td><a href = "css-concepts.html">Post 2</a></td></tr>
+        <tr><td><a href = "arrays-hashes.html">Post 3</a></td></tr>
+        <tr><td><a href = "enumerable-methods.html">Post 4</a></td></tr>
+        <tr><td><a href = "ruby-classes.html">Post 5</a></td></tr>
+        <tr><td>Post 6</td></tr>
+        <tr><td>Post 7</td></tr>
+      </table>
+    </section>
+
+    <!-- Aside section with text -->
+    <aside class="text-content">
+      <h3>Week 6</h3>
+      <h4>Ruby Classes<br>12/20/15</h4>
+      <p>
+        Time to dive into a staple of object-orientated programming: Classes.
+      </p>
+      <p>
+        Classes are a form of objects that are specifically created to represent and do something. When these objects are created they will have special variables defined and exclusive methods just for it. A user can initialize as many of objects of any specific classes as they want.
+      </p>
+      <p>
+        So lets use a real world example to help explain what classes are. Let's use people as an example. First of all, lets show the barebones of a person class, and one of the first things that everyone has is a name. We can create a new class for a specific person as so: 
+      </p>
+      <p>
+        <pre><code>
+          Class Person
+            def initialize(name)
+              @name = name
+            end
+          end
+        </code></pre>
+      </p>
+      <p>
+        This is the basic barebones of a person class. Inside the class we have a initialize method which runs when a new class is created. So if we create a new person with <code>person1 = Person.new("Menuka")</code>, this creates a new person class called person1. With our initialization method, our person will automatically have an instance variable, @name, store the given name, Menuka. 
+      </p>
+      <p>
+        If we wanted, we could pass in other data that can be used as instance varibles too. Such as age or gender. We can also have the initialize method automatically create instance variables too without data being passed. Here is a more worked out class example:
+      </p>
+      <p>
+        <pre><code>
+          Class Person
+            def initialize(name, age, gender)
+              @name = name
+              @age = age
+              @gender = gender
+              @is_alive = true
+            end
+          end
+         </code></pre>
+      </p>
+      <p>
+        If we wanted to access person1's age, we need to add an extra line to our class code to add an attribute reader. We can add one with <code> attr_reader :age</code>. This lets us use <code>person1.age</code> to get that person's age.
+      </p>
+      <p>
+        Classes also allow us to create methods that just our person class can use. Let's create a greeting method that greets us:
+      </p>
+      <p>
+        <pre><code>
+            Class Person
+
+            attr_reader :age
+            attr_reader :name
+            attr_reader :gender
+
+            def initialize(name, age, gender)
+              @name = name
+              @age = age
+              @gender = gender
+              @is_alive = true
+            end
+
+            def greeting
+              puts "Hello World, my name is #{@name}"
+            end
+          end
+        </code></pre>
+      </p>
+      <p>
+        As you can see we now have a method called greeting that will print some output (plus it includes one of our inheritance variables). We could call <code>person1.greeting</code> which would output "Hello World, my name is Menuka".
+      </p>
+      <p>
+        Now we have a basic class that can create a new object when called and has its own special method! Some more advance things we can look into later include inheritance and other class-specific tricks.
+      </p>
+    </aside>
+
+    <!-- Use <footer> tag to denote footer of site -->
+    <footer>
+      <p>Created by Menuka Samaranayake</p>
+      <p>Last updated December 2015</p>
+      <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
+      <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
+      <a href = "https://github.com/menuka-s">GitHub</a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
