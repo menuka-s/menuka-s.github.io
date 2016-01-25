@@ -1,0 +1,20 @@
+/* ---CSS for Blog Index --- */
+.project_index {
+  
+  float: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 10em;
+  border: 1px solid black;
+  padding-bottom: 1em;
+  padding-left: 1em;
+  padding-right: 15px;
+  background-color: #FFFFFF;
+}
+
+/* ---CSS for aside text--- */
+aside {
+  float: right;
+  margin-right: 30px;
+  width: 65%;
+}
