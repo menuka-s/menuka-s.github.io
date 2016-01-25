@@ -3,7 +3,7 @@
 
 <head>
 
-  <title>Menuka's DBC Blog - Post 1</title>
+  <title>Menuka's DBC Blog - Post 6</title>
   <meta charset="UTF-8">
   <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
   <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
@@ -29,6 +29,7 @@
       <a href ="#">Resume</a>
       <a href ="../contact.html">Contact</a>  
     </nav>
+
     <!-- Can use <section> to denote a section of content -->
     <section class="blog-index">
       <h3>Blog Index</h3>
@@ -46,20 +47,16 @@
 
     <!-- Aside section with text -->
     <aside class="text-content">
-      <h3>Week 1</h3>
-      <h4>Introduction to git and GitHub<br>12/4/15</h4>
+      <h3>Week 7</h3>
+      <h4>JavaScript<br>12/20/15</h4>
       <p>
-        Hey everyone! I hope all my fellow DBC peers were able to get through week 1. My week 1 experience was really informative, and even though I struggled at times, I felt that I actually accomplished a decent amount of stuff.
+        I decided to look at how to pick random numbers in JavaScript vs Ruby this week. Both have very different ways of randomly picking numbers that are accessible to programmers.
       </p>
       <p>
-        This week, we learned a lot about version control and how to use git to accomplish this. Version control is the documentation of changes to a project over time. It basically is a paper trail to show when certain things were done, such as the addition of a feature or the failure of another. Version control allows developers to easily compare new code to old versions at any time.
+        Let's look at Ruby first. In Ruby, picking a random number is fairly simple. All we need to do is basically <code>rand(max_value)</code>. This will randomly return a random integer between 0 (inclusive) and that number (exclusive). For example if we wanted any number between 1 and 10 we could use <code>rand(10) + 1</code>. Calling just <code>rand</code> without any arguments will return some random float. If we wanted a number in a specific range we can do that too: <code>rand(1..10)</code>. Another option in ruby is using <code>Random.new</code>, but it is bad practice to initialize a new random number generator each time we want a new random number.
       </p>
       <p>
-        One system for version control is git. Git offers developers the ability to make "commits" or save checkpoints of their work and document them. It also allows the creation of branches of code from the main master project. This means that a developer can make a copy of the code to edit, while the working master copy stays put. Once the developer feels that their branch is ready, it can easily be merged into the master project.
-      </p>
-      <p>
-        So git lives on your computer, how do we connect with other developers around the world? Through GitHub! GitHub is really convenient to store code because it allows anyone to make copies or forks. Anyone can edit the code as they see fit and if they want they can make a pull request to contribute their code to the master project. GitHub allows a natural way for teams to know what others have worked on and allows an easy way to review changes that other teammates have made.
-      </p>
+        JavaScript is different though. Instead of getting a nice integer like in Ruby we don't get that in JS. Here we will use <code>Math.random();</code>. This returns some number between 0 (inclusive) and 1 (exclusive). So we could get some random decimal value such as 0.3423423421341234. So how would we get nice simple interger values? Well we we have to do a couple different things. First, we need to multiply that random decimal value by the max value we want. This basically gives a random number that fits our range. Second, we can use <code>Math.floor();</code> to get whole numbers. So lets look at an example, how about a random number between 1-10? <code>Math.floor(Math.random()*10) + 1</code>. In my opinion it isn't as simple as Ruby's implementation.
     </aside>
 
     <!-- Use <footer> tag to denote footer of site -->
