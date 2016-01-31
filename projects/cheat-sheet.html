@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Menuka's DBC Site - DBC Cheat Sheet</title>
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
+
+
+</head>
+
+<body>
+
+  <!-- Use <header> tag to denote header for page -->
+  <header>
+    <h1>M<span>ENUKA</span> S<span>AMARANAYAKE</span></h1>
+  </header>
+
+  <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
+  <nav>
+    <a href ="../index.html">Home</a>
+    <a href ="../about_me.html">About Me</a>
+    <a href ="../blog/index.html">Blog</a>
+    <a href ="index.html">Projects</a>
+    <a href ="#">Resume</a>
+    <a href ="../contact.html">Contact</a>  
+  </nav>
+
+  <!-- Can use <section> to denote a section of content -->
+  <section class="project_index">
+    <h3>Blog Index</h3>
+    <table>
+      <tr><td><a href = "cheat-sheet.html">DBC Cheat Sheet</a></td></tr>
+    </table>
+  </section>
+
+  <!-- I'm using an <aside> tag to aid in the formating when I get to that part. Ideally, this image will put on the left side of some section of content -->
+  <aside class="text-content">
+    <h3>Dev Bootcamp Cheat Sheet</h3>
+    <h4>RUBY SYNTAX</h4>
+
+    <h5>If/Else statements:</h5>
+    <p>Basic syntax:</p>
+    <pre><code>
+    if 1 < 2
+      print "yup"
+    elsif
+      print "ok"
+    else
+      print "war"
+    end
+    </code></pre>
+    <p> Can refactor to: </p>
+    <code>expression if bool</code>
+    <p>Ternary conditional:</p>
+    <code>boolean ? Do this if true: Do this if false</code>
+    <p></p>
+    <code> puts var1 == var2 ? "ok" : "nope"</code>
+
+    <h5>Unless statemnts:</h5>
+    <p>Basic syntax:</p>
+    <pre><code>
+    unless bool
+      print "ok"
+    else
+      print "cool"
+    end
+    </code></pre>
+    <p>Can refactor to:</p>
+    <code>expression unless bool</code>
+
+    <h5>Iterators</h5>
+    <p>While loop:</p>
+    <pre><code>
+    counter = 1
+    while counter < 11
+      puts counter
+      counter += 1
+    end
+    </code></pre>
+
+    <p>Until loop:</p>
+    <pre><code>
+    counter = 1
+    until counter == 11
+      puts counter
+      counter += 1
+    end
+    </code></pre>
+
+    <p>For iterator: (hint '..' is inclusive)</p>
+    <pre><code>
+    for num in 1..10
+      puts num
+    end
+    </code></pre>
+
+    <p>Fixed iterator:</p>
+    <code>10.times{|n| puts n}</code>
+
+    <p>Array iterator:</p>
+    <code>array.each{|x| puts x}</code>
+
+    <p>Others:</p>
+    <code>.upto(num)</code>
+    <code>num.next</code>
+
+    <h5>Hash and Arrays</h5>
+    <p>Arrays:</p>
+    <pre><code>
+    my_array = [1,2,3]
+    my_array.each{ |x| puts x } 
+    </code></pre>
+
+    <p>Hashes:</p>
+    <pre><code>
+    my_hash = {
+      "Key1" => "value1",
+      "Key2" => value2
+    }
+    </code></pre>
+    <p>or</p>
+    <pre><code>
+    my_hash = Hash.new
+    my_hash["name"] = "Menuka"
+    </code></pre>
+
+    <p>Iterating through hash with key-value pair:</p>
+    <code>my_hash.each{|key,value| puts #{key}: #{value}}</code>
+
+    <p>Can also use symbols for hashes. Some other useful methods include: </p>
+    <code>.each_key</code>
+    <code>.each_value</code>
+    <code>.delete(value)</code>
+
+    <h5>Methods:</h5>
+    <p>Basic declaration:</p>
+    <pre><code>
+    def method_name(arguments)
+      code body
+    end
+    </code></pre>
+
+    <p>In methods we don't need return statements and can set default parameter values if not included in the method call.</p>
+
+    <h5>Quick tips:</h5>
+    <p>Input:</p>
+    <code>input = gets.chomp</code>
+    <code>numInput = Integer(gets.chomp)</code>
+
+    <p>Output variables</p>
+    <code>puts "Number was #{var}"</code>
+
+    <p>Split words to array:</p>
+    <code>wordArray = text.split</code>
+
+    <p>String tricks:</p>
+    <code>string.capitalize!</code>
+    <code>string.upcase!</code>
+    <code>string.downcase!</code>
+
+    <p>Quick replace char:</p>
+    <pre><code>
+    if user_input.include? "s"
+      user_input.gsub!(/s/ , "th")
+    end
+    </code></pre>
+
+    <p>Ruby types tricks:</p>
+    <code>.to_s</code>
+    <code>.is_a?</code>
+
+    <p>Combined comparison operator: (Returns 1,0,-1 depending on left compared to right)</p>
+    <code>num.sort!{|first_num, last_num| second_num <=> first_num}</code>
+
+    <p>Check if method/object/symbol responds to certain method:</p>
+    <code>my_array.respond_to?(:push)</code>
+  </aside>
+
+
+  <!-- Use <footer> tag to denote footer of site -->
+  <footer>
+    <p>Created by Menuka Samaranayake</p>
+    <p>Last updated December, 2015</p>
+    <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
+    <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
+    <a href = "https://github.com/menuka-s">GitHub</a>
+  </footer>
+
+</body>
+
+</html>
