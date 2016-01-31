@@ -18,3 +18,8 @@ aside {
   margin-right: 30px;
   width: 65%;
 }
+
+code {
+  display: inline-block;
+  background-color: #d3d3d3;
+}
