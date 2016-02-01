@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>Menuka's DBC Blog - Post 7</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+
+</head>
+
+<body>
+
+  <!-- this div tag was used for testing some positioning -->
+  <div id="wrapper">
+
+    <!-- Use <header> tag to denote header for page -->
+    <header>
+      <h1>Menuka Samaranayake</h1>
+    </header>
+
+    <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
+    <nav>
+      <a href ="../index.html">Home</a>
+      <a href ="../about_me.html">About Me</a>
+      <a href ="index.html">Blog</a>
+      <a href ="../projects/index.html">Projects</a>
+      <a href ="#">Resume</a>
+      <a href ="../contact.html">Contact</a>  
+    </nav>
+
+    <!-- Can use <section> to denote a section of content -->
+    <section class="blog-index">
+      <h3>Blog Index</h3>
+      <table>
+        <tr><td><a href = "git.html">Post 1</a></td></tr>
+        <tr><td><a href = "css-concepts.html">Post 2</a></td></tr>
+        <tr><td><a href = "arrays-hashes.html">Post 3</a></td></tr>
+        <tr><td><a href = "enumerable-methods.html">Post 4</a></td></tr>
+        <tr><td><a href = "ruby-classes.html">Post 5</a></td></tr>
+        <tr><td><a href = "JavaScript.html">Post 6</a></td></tr>
+        <tr><td><a href = "tech.html">Post 7</a></td></tr>
+      </table>
+    </section>
+
+    <!-- Aside section with text -->
+    <aside class="text-content">
+      <h3>Week 8</h3>
+      <h4>Sorting</h4>
+      <h5>1/31/16</h5>
+      <p>This week let's take a look into a couple different sorting algorithms that are used in computer science.</p>
+      <p>Sorting itself is the process of organizing data by some category. So far in Dev Bootcamp we've used sorting to either organize data structures by number or alphabetically. The sorting algorithms we've used are mainly built-in to the programming languages, and some of them are actually really efficient. But what if we wanted to write our own sorting methods? Let's take a look at 3 different methods and try to explain them and their complexity.</p>
+      <h5>Merge Sort: </h5>
+      <p>Merge sort's algorithm is a form of divide and conquer where we intially divide the original list into subsets of each element (so each subset contains just one element). We carefully compare neighboring subsets (and each element within) together and combine them into a sorted subset. We repeatedly merge these subsets until we arive with one final sorted list. Here is a great example showing this algorithm (<a href = "https://en.wikipedia.org/wiki/Merge_sort">source</a>):</p>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/c/cc/Merge-sort-example-300px.gif" alt="From Wikipedia's page on Merge Sort"/>
+      <p>For those who know complexity and Big O Notation, the worst case performance is O(n log n) while the best and average are also typically O(n log n).
+      <h5>Quick Sort: </h5>
+      <p>This algorithm is another divide and conquer algorithm. It choses pivot values that are used as markers to where values are either bigger or smaller than that pivot. Pivots aren't necessarily the middle value automatically. They are decided by the implementation of the algorithm and can different based on the implementation. Many chose the pivot as the last element in the unsorted list. Once the pivot is chosen, next comes the partitioning step where each element is compared to the pivot value. All those that are smaller than it will be switched to left of the pivot, while all those that are bigger will be to the right of it. At this step only the pivot is in it's correct position in the list. To fully sort the list, we would recursively chose new pivots (to subsections of the list outside of the prior pivot) and go through the steps again. In the end we will have a sorted list. Wikipedia again has a good visualization (<a href = "https://en.wikipedia.org/wiki/Quicksort">source</a>):</p>
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/6/6a/Sorting_quicksort_anim.gif" alt="From Wikipedia's page on Quick Sort"/>
+      <p>The best and average case performance is O(n log n), while the worst case is O(n<sup>2</sup>).
+      <h5>Bubble Sort:</h5>
+      <p>Compared to the other two algorithms, this one isn't as great, but it may be the simplest to undersstand. The list is analyzed directly by looking at it in pairs, starting from the beginning. The first two elements are analyzed and if the left one is bigger than the right one, they are switched. Next the 2nd and 3rd element are compared and they are switched if the left is bigger than the right. This left-right comparison is recursively applied until we reach the end of the list. When we get to the end, the rightmost value will be the biggest. Now we start at the beginning of the list and start another iteration of comparing left-right pairs. Eventually we will end up with a sorted list. Here is an animated image showing this process (<a href = "https://en.wikipedia.org/wiki/Bubble_sort">source</a>):</p>
+      <img src = "https://upload.wikimedia.org/wikipedia/commons/c/c8/Bubble-sort-example-300px.gif" alt = "From Wikipedia's page on Bubble Sort" />
+      <p>The best, worst, and average case perfomance is O(n<sup>2</sup>).</p>
+
+    </aside>
+
+    <!-- Use <footer> tag to denote footer of site -->
+    <footer>
+      <p>Created by Menuka Samaranayake</p>
+      <p>Last updated January 2016</p>
+      <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
+      <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
+      <a href = "https://github.com/menuka-s">GitHub</a>
+    </footer>
+  </div>
+
+</body>
+
+</html>
