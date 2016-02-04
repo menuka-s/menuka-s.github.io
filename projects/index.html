@@ -1,54 +1,164 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 
-  <title>Menuka's DBC Site - Projects</title>
-  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
- <link rel="stylesheet" type="text/css" href="../stylesheets/projects.css">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
+  <title>Menuka's Projects</title>
 
+  <!-- Bootstrap Core CSS - Uses Bootswatch Flatly Theme: http://bootswatch.com/flatly/ -->
+  <link href="../css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="../css/freelancer.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="../font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 </head>
 
-<body>
-
-  <!-- Use <header> tag to denote header for page -->
-  <header>
-    <h1>M<span>ENUKA</span> S<span>AMARANAYAKE</span></h1>
-  </header>
+<body id="page-top" class="index">
 
   <!-- Use <nav> tag to create a navigation section similar to a navigation bar -->
-  <nav>
-    <a href ="../index.html">Home</a>
-    <a href ="../about_me.html">About Me</a>
-    <a href ="../blog/index.html">Blog</a>
-    <a href ="index.html">Projects</a>
-    <a href ="#">Resume</a>
-    <a href ="../contact.html">Contact</a>  
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="../index.html">Menuka</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li class="hidden">
+            <a href="#page-top"></a>
+          </li>  
+          <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="X">Blog<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="../blog/git.html">Post 1: Git</a></li>
+                <li><a href="../blog/css-concepts.html">Post 2: CSS</a></li>
+                <li><a href="../blog/arrays-hashes.html">Post 3: Arrays and Hashes</a></li>
+                <li><a href="../blog/enumerable-methods.html">Post 4: Enumerables</a></li>
+                <li><a href="../blog/ruby-classes.html">Post 5: Ruby Classes</a></li> 
+                <li><a href="../blog/JavaScript.html">Post 6: JavaScript</a></li>
+                <li><a href="../blog/tech.html">Post 7: Sorting</a></li> 
+              </ul>
+          </li>
+          <li class="page-scroll">
+            <a href="index.html">Portfolio</a>
+          </li>
+          <li class="page-scroll">
+            <a href="../index.html#about">About</a>
+          </li>                 
+          <li class="page-scroll">
+            <a href="../index.html#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
   </nav>
 
   <!-- Can use <section> to denote a section of content -->
-  <section class="project_index">
-    <h3>Blog Index</h3>
-    <table>
-      <tr><td><a href = "cheat-sheet.html">DBC Cheat Sheet</a></td></tr>
-    </table>
+  <section class="blog-index">
+    <div class="container">
+      <div class="col-sm-12">
+        <h3>Portfolio</h3>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="../imgs/Menuka_Samaranayake_Resume.pdf">Resume</a></li>
+          <li><a href="https://github.com/menuka-s">GitHub Profile</a></li>
+        </ul>
+        <h4>Projects</h4>
+        <h5>Dev BootCamp - Phase 1</h5>
+        <h5>Dev BootCamp - Phase 0</h5>
+        <ul>
+          <li><a href ="cheat-sheet.html">Ruby Cheat Sheet</a></li>
+        </ul>
+        <h5>Bioinformatics</h5>
+        <h5>College Projects</h5>
+      </div>
+    </div>
   </section>
 
-  <!-- I'm using an <aside> tag to aid in the formating when I get to that part. Ideally, this image will put on the left side of some section of content -->
-  <aside class="text-content">
-    <h3>Projects</h3>
-    <p>Check out the side pane for various projects that I've worked on through Dev Bootcamp</p>
-  </aside>
 
-
-  <!-- Use <footer> tag to denote footer of site -->
-  <footer>
-    <p>Created by Menuka Samaranayake</p>
-    <p>Last updated December, 2015</p>
-    <a href="mailto:menuka.samaranayake@gmail.com">Email Me</a>
-    <a href = "https://www.linkedin.com/in/menuka-samaranayake-b2a4a921">Linkedin</a>
-    <a href = "https://github.com/menuka-s">GitHub</a>
+  <!-- Footer -->
+  <footer class="text-center">
+    <div class="footer-above">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col col-md-12">
+            <h3>Social Media</h3>
+            <ul class="list-inline">
+              <li>
+                <a href="https://facebook.com/menuka" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href="https://github.com/menuka-s" class="btn-social btn-outline"><i class="fa fa-fw fa-github"></i></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/menukathoughts" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/menuka-samaranayake-b2a4a921" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col col-md-12">
+            <p>The base for this theme was provided by <a href="http://startbootstrap.com">Start Bootstrap</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-below">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            Copyright &copy; Menuka Samaranayake 2016
+          </div>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes) -->
+  <div class="scroll-top page-scroll visible-xs visible-sm">
+    <a class="btn btn-primary" href="#page-top">
+      <i class="fa fa-chevron-up"></i>
+    </a>
+  </div>
+  <!-- jQuery -->
+  <script src="../js/jquery.js"></script>
+
+  <!-- Bootstrap Core JavaScript -->
+  <script src="../js/bootstrap.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+  <script src="../js/classie.js"></script>
+  <script src="../js/cbpAnimatedHeader.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="../js/jqBootstrapValidation.js"></script>
+  <script src="../js/contact_me.js"></script>
+
+  <!-- Custom Theme JavaScript -->
+  <script src="../js/freelancer.js"></script>
 
 </body>
 

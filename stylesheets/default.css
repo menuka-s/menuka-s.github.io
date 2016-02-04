@@ -1,11 +1,11 @@
-body {
+/*body {
   background-color: #fcfcf4;
   font-family: "Verdana";
   margin-top: 0;
   margin-left: 0;
   margin-right: 0;
 }
-
+*/
 
 /* Tried adding this to help create a sticky footer at the bottom of the page when a lot of content is created. Did not work.
 #wrapper {
@@ -15,6 +15,7 @@ body {
 */
 
 /* ---CSS for Header--- */
+/*
 header {
   border: 1px solid #0066cc; 
   width: 100%;
@@ -24,23 +25,12 @@ header {
   margin-top: 0;
   letter-spacing: 2px;
 }
-header span{
-  font-size: 20px;
-  margin-top: 0;
+*/
+
+* {
+  border-radius: 0 !important;
 }
 
-/* ---CSS for Navigation Links--- */
-nav {
-  background-color: #0066cc;
-  width: 100%;
-  text-align: center;
-}
-
-nav a {
-  padding: 0em 2em;
-  color: #FFFFFF;
-  text-decoration: none;
-}
 
 /* ---CSS for Content Section--- */
 .content {
